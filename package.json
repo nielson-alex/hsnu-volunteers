@@ -21,6 +21,10 @@
     "@types/react-dom": "^18.0.8",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-toastify": "^4.1.0",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^4.7.2",
+    "@types/webpack-hot-middleware": "^2.25.6",
+    "@types/webpack-plugin-serve": "^1.4.2",
     "body-parser": "^1.20.1",
     "concurrently": "^7.5.0",
     "connect-flash": "^0.1.1",
@@ -37,7 +41,11 @@
     "react-toastify": "^9.1.1",
     "switch": "^0.0.0",
     "typescript": "^4.8.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.74.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-hot-middleware": "^2.25.2",
+    "webpack-plugin-serve": "^1.6.0"
   },
   "scripts": {
     "start": "node server.ts",
