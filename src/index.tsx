@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createHashRouter as createRouter,
+  createBrowserRouter as createRouter,
   RouterProvider,
   Route
 } from "react-router-dom";
