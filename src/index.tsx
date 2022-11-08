@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
+  createHashRouter as createRouter,
   RouterProvider,
   Route
 } from "react-router-dom";
@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const router = createBrowserRouter([
+const router = createRouter([
   {
     path: "/",
     element: <Root />,
