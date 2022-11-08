@@ -37,7 +37,7 @@ SomeModel.find()
     // .limit(20);
   })
   .then(volunteers => {
-    console.log("volunteers:", volunteers);
+    console.log("all volunteers:", volunteers);
   })
   .catch(err => {
     console.log(err);
