@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home2 from "./components/Home2";
+import Home from "./components/Home";
 import logo from './logo.svg';
 import './App.css';
 
@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <ul className="App-header">
           <li>
-            <Link to="/Home2">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
             <Link to="/about">About Us</Link>
@@ -26,7 +26,7 @@ function App() {
         </ul>
         <Routes>
           <Route path="/" element={<p>hi</p>} />
-          <Route path='/Home2' element={< Home2 />}></Route>
+          <Route path='/home' element={< Home />}></Route>
         </Routes>
       </div>
     </Router>
