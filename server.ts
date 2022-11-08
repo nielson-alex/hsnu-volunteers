@@ -33,3 +33,14 @@ io.on('connection', socket => {
         socket.broadcast.emit('update-list');
     });
 });
+
+if (process.env.NODE_ENV === 'production') {
+    // Express will serve up production assets
+    app.use(express.static('client/build'));
+
+    // Express serves up index.tsx file if it doesn't recognize the route
+    const path = require('path');
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    })
+}
